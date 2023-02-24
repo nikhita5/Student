@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Student information</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page header text.center">
+                <h2>student information</h2>
+            </div>
+            <form id="Rollno" method="get">
+                <div class="form-group">
+                    <label> roll-no:</label>
+                    <input type="number" class="form-control"  id="Roll-no"onchange="getroll - no()" >
+                </div>
+                <div class="form-group">
+                    <label> student name:</label>
+                    <input type="text" class="form-control"  id="name" >
+                </div>
+
+                <div class="form-group">
+                    <label>class1:</label>
+                    <input type="text" class="form-control" id="class1" >
+                </div>
+                <div class="form-group">
+                    <label>Enrollment-date :</label>
+                    <input type="number" class="form-control" id="ED" >
+                </div>
+                <div class="form-group">
+                    <label>birth date:</label>
+                    <input type="text" class="form-control" id="DOB" >
+                </div>
+                <div class="form-group">
+                    <label>address :</label>
+                    <input type="text" class="form-control" id="address" >
+                </div>
+
+                <button type="button" class="btn btn-primary" id="Save"  onclick="saveData()" disabled>save</button>
+                <button type="button" class="btn btn-primary" id="Change"  onclick="changeData()" disabled>Change</button>
+                <button type="button" class="btn btn-primary" id="Reset"  onclick="resetForm()" disabled>Reset</button>
+                <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+                <script type="text/javascript" src="js/index.js"></script>
+            </form>
+        </div>
+
